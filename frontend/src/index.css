@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 0; background: #f6f7f9; }
+.app { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+header { display: flex; justify-content: space-between; align-items: center; }
+nav a { margin-right: 1rem; text-decoration: none; color: #333; }
+nav a.active { font-weight: bold; color: #0066cc; }
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1rem; }
+.card { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.card h3 { margin: 0 0 .5rem; font-size: .9rem; color: #666; }
+.card p { margin: 0; font-size: 1.8rem; font-weight: bold; }
+table { width: 100%; border-collapse: collapse; background: white; margin-top: 1rem; }
+th, td { padding: .6rem; text-align: left; border-bottom: 1px solid #eee; }
+.filters, .site-form { display: flex; gap: .5rem; margin: 1rem 0; flex-wrap: wrap; }
+input, select, button { padding: .5rem; border-radius: 4px; border: 1px solid #ccc; }
+button { background: #0066cc; color: white; border: none; cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+.error { color: #c00; }
+@media (max-width: 600px) { table { font-size: .85rem; } }
